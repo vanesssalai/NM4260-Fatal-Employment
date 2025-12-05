@@ -36,6 +36,7 @@ pause_dialogue = [
                 ],
                 callback: method(self, function() {
 					with obj_player	instance_destroy(obj_player);
+					with obj_inventory	instance_destroy(obj_inventory);
 					game_restart();
                     room_goto(r_splash);
                 })
