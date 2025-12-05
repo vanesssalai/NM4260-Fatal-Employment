@@ -31,12 +31,10 @@ pause_dialogue = [
             },
             {
                 text: "Quit Game",
-                response: [
-                    {name: "ANNOUNCEMENT", message: "Youre quitting?! Q4 submissions are still not done!"}
-                ],
                 callback: method(self, function() {
 					with obj_player	instance_destroy(obj_player);
 					with obj_inventory	instance_destroy(obj_inventory);
+					audio_stop_all();
 					game_restart();
                     room_goto(r_splash);
                 })
