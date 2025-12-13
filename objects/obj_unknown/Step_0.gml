@@ -18,6 +18,8 @@ if (!is_revealed && instance_exists(obj_player)) {
         
         is_revealed = true;
         
+        show_debug_message("Spawning object: " + object_get_name(spawn_data.object));
+        show_debug_message("Has item data: " + string(spawn_data.item_data != undefined));
         if (spawn_data != noone && spawn_data != undefined) {
             var spawn_object = spawn_data.object;
             var item_data = spawn_data.item_data;
@@ -58,8 +60,8 @@ if (!is_revealed && instance_exists(obj_player)) {
                 
                 show_debug_message("Zombie spawned with spawn alert active");
             }
+			
+			instance_destroy();
         }
-        
-        instance_destroy();
     }
 }
