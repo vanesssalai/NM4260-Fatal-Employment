@@ -79,7 +79,6 @@ password = lock_instance.password;
 
 
 worker_items = [
-
     {
         quest_id: "help_medkit_cd",
         quest_title: "Injured Coworker pt2",
@@ -125,8 +124,6 @@ worker_items = [
             {name: "Rachel", message: "Ill be drawing here while waiting for you!"}
         ]
     },
-
-
     {
         quest_id: "help_key_tablet",
         quest_title: "Missing Items",
@@ -211,8 +208,6 @@ worker_items = [
             {name: "Sarah", message: "Thanks again! Stay safe!"}
         ]
     },
-
-
     {
         quest_id: "help_server_keycard",
         quest_title: "IT Emergency",
@@ -244,8 +239,6 @@ worker_items = [
             {name: "Marcus", message: "Good luck getting out of here!"}
         ]
     },
-
-
     {
         quest_id: "help_bow_1",
         quest_title: "Hyrdation Reminder",
